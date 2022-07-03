@@ -9,15 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SplashLayoutView">
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
+        <!--스플래시 액티비티-->
+        <activity android:name=".SplashActivity" android:exported="true">
+        <!--먼저실행하는코드-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
-        </activity>
-    </application>
+         </activity>
+        <!--메인 액티비티-->
+        <activity
+        android:name=".MainActivity" android:exported="false"/>
+</application>
+
+
+
 
 </manifest>
